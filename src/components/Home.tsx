@@ -1,4 +1,4 @@
-//import * as React from 'react';
+// import * as React from 'react';
 import BlogList from "./BlogList";
 import useFetch from "./useFetch";
 
@@ -10,7 +10,7 @@ type Blog = {
 };
 
 export default function App () {
-const { data: blogs, isPending, error} = useFetch<Array<Blog>>('http://localhost:8000/blogs');
+const { data: blogs, isPending, error} = useFetch<Blog[]>('http://localhost:8000/blogs');
     
   return (
     <>
